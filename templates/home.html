@@ -1,0 +1,23 @@
+
+
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class ="container">
+<h1>THESIS PICTURES</h1>
+
+
+{% for show in shows %}
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" src= {{url_for('static', filename = show) }} alt="Card image cap">
+    
+  </div>
+
+
+{% endfor %}
+
+
+</div>
+
+{% endblock %}
